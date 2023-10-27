@@ -12,50 +12,97 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
             <a class="navbar-brand " href="index.html"><img class="imgLogo" src="../img/logos/logo.jpg"
                     alt="logo de la pag" width="57"></a>
-            <ul class="nav nav-pills justify-content-end:">
-                <li class="nav-item">
-                    <a class="nav-link " href="../index.html">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quienesSomos.html">¿Quienes somos?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="productos.html">productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled " href="dondeEstamos.html" aria-disabled="true">¿Donde estamos?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contactanos.html">contactanos</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                <ul class=" nav nav-pills justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="quienesSomos.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="productos.html">productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href="dondeEstamos.html">¿Donde estamos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href="contactanos.html">contactanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+
         <div class="encabezado">
             <h1>Hulu</h1>
             <h2>Productos</h2>
         </div>
-        <div class="contenedorP">
-            <img src="../img/loremVisual/lorem1.jpg" alt="">
-            <img src="../img/loremVisual/lorem2.jpg" alt="">
-            <img src="../img/loremVisual/lorem3.jpg" alt="">
-            <img src="../img/loremVisual/lorem4.jpg" alt="">
-            <button type="button" disabled>Ver mas</button>
+        <div class="contenedorFlex text-center ">
+            <div class="card tarjeta" style="width: 18rem;">
+                <img class="card-img-top" src="../img/loremVisual/lorem1.jpg" alt="Lorem abstarcto1">
+                <div class="card-body">
+                    <h5 class="card-title">Que lindo lorem</h5>
+                    <p class="card-text">Estructuras geométricas y gradientes de color en arte generado por IA.</p>
+                    <a  href="error404.html" class="btn btn-primary  compra">comprar Lorem!</a>
+                </div>
+            </div>
+            <div class="card tarjeta" style="width: 18rem;">
+                <img class="card-img-top" src="../img/loremVisual/lorem2.jpg" alt="lorem abstracto2">
+                <div class="card-body">
+                    <h5 class="card-title">Otro lorem</h5>
+                    <p class="card-text">Formas abstractas y colores cautivadores en arte IA basado en Lorem Ipsum.</p>
+                    <a href="error404.html" class="btn btn-primary compra">comprar Lorem!</a>
+                </div>
+            </div>
+            <div class="card tarjeta" style="width: 18rem;">
+                <img class="card-img-top" src="../img/loremVisual/lorem3.jpg" alt="lorem abstracto3">
+                <div class="card-body">
+                    <h5 class="card-title">Mas lorem</h5>
+                    <p class="card-text">La fusión de líneas y colores en composiciones artísticas de IA inspiradas en Lorem.</p>
+                    <a href="error404.html" class="btn btn-primary compra">comprar Lorem!</a>
+                </div>
+            </div>
+            <div class="card tarjeta" style="width: 18rem;">
+                <img class="card-img-top" src="../img/loremVisual/lorem4.jpg" alt="lorem abstracto4">
+                <div class="card-body">
+                    <h5 class="card-title">fuaaa tanto lorem?</h5>
+                    <p class="card-text">Explorando el caos controlado: IA crea arte abstracto con base en Lorem Ipsum.</p>
+                    <a href="error404.html" class="btn btn-primary compra">comprar Lorem!</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center ">
+            <button class="ver">ver mas</button>
         </div>
     </main>
     <footer>
         <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
-                <li><a href="productos.html">productos</a></li>
-                <li><a href="dondeEstamos.html">¿Donde estamos?</a></li>
-                <li><a href="contactanos.html">contactanos</a></li>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a
+                        class=" link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="../index.html">home</a></li>
+                <li class="nav-item"><a
+                        class=" link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="quienesSomos.html">¿Quienes somos?</a></li>
+                <li class="nav-item"><a
+                        class=" link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="productos.html">productos</a></li>
+                <li class="nav-item"><a
+                        class=" link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="dondeEstamos.html">¿Donde estamos?</a></li>
+                <li class="nav-item"><a
+                        class=" link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        href="contactanos.html">contactanos</a></li>
             </ul>
         </nav>
         <div>

@@ -1,5 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     background-color: #131313;
     color: #ffffff;
+    min-height: 100vh;
 }
 
+/* nav */
+/* estilo y tamaño logo */
+.imgLogo {
+    border-radius: 15px;
+    margin-left: 7px;
+}
+
+/* main */
+/* encabezado centrado y stilos */
+.encabezado {
+    width: 250px;
+    padding-bottom: 3px;
+    background-color: #DB7B0B;
+    margin: auto auto 250px auto;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    color: #230F00
+    ;
+}
+
+/* tipografia del encabezado*/
+.textoCentrado {
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* botones deplegables */
+.botonchito {
+    background-color: #ff6d09;
+    border-color: #dbac5b;
+
+}
+
+.botonchito:hover {
+    background-color: #fdd07a;
+    border-color: #dbac5b;
+}
+
+/* desplegable contenedor */
+.desplegable {
+    background-color: #fdd07a;
+
+}
+
+/* footer */
+
+footer {
+    height: auto;
+    border-top: 10px #f7f7f7 groove;
+    border-bottom: 10px rgb(150, 150, 150) groove;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+footer nav {
+    margin-left: 3px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+
+/* posicion de las redes sociales */
+footer div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    margin-bottom: 3px;
+}
+
+/* tamaño de la redes y redondeado */
+footer div a img {
+    height: 35px;
+    border-radius: 100px;
+}
+
+/*  */
+.imgLorem {
+    height: 250px;
+    width: 390px;
+    border-radius: 100px;
+
+}
+
+
+
+
+
+
+/* productos */
+
+/* nodelo pc */
+.tarjeta {
+    flex: 0 0 calc(25% - 60px);
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    background-color: #fdd07a;
+    box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+    -webkit-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+    -moz-box-shadow: 32px 30px 34px -13px rgba(255, 255, 255, 0.212);
+} 
+.compra{
+    background-color:#Efb810 ;
+    color: #080808;
+    border-color: #080808;
+}
+
+/* modelo tablet */
+@media (max-width: 768px) {
+    .tarjeta {
+        flex: 0 0 calc(50% - 40px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* modelo para cel */
+
+@media (max-width: 576px) {
+    .tarjeta {
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+.contenedorFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* modelado del boton */
+.ver {
+    border-radius: 50px;
+    padding: 5px 100px 5px 100px;
+    background-color: #B0870C;
+    cursor: pointer;
+    color: rgb(24, 24, 24);
+    text-align: center;
+    margin: 50px;
+    box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+    -webkit-box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+    -moz-box-shadow: 2px -2px 28px 1px rgba(255, 255, 255, 0.212);
+}
